@@ -6,4 +6,4 @@ If we consider a resume as the corporate first impression, the purpose of resume
 The one page style of the resume is inspied by https://github.com/sb2nov.
 
 ## Preview
-![alt text](https://raw.githubusercontent.com/SayaliPatkar/resume/Resume.png)
+![alt text](https://github.com/SayaliPatkar/resume/blob/master/Resume.png)
