@@ -1,0 +1,218 @@
+%-------------------------
+% Resume in Latex
+% Author : Sayali Patkar
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+% for symbols
+\usepackage{graphicx,xcolor,fontawesome}
+\usepackage{csquotes}
+\usepackage{ragged2e}
+
+
+
+\pagestyle{fancy}
+% clear all header and footer fields
+\fancyfoot{}
+\fancyhf{} 
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+   \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-1pt}\item
+	%Rubber spacing
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} &  \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{\justify #2}\vspace{-4pt}}
+%for hollow circular bullets
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\educationSubHeadingListStart}{\renewcommand\labelitemi{\raisebox{1.50ex}{$\bullet$}}\begin{itemize}[leftmargin=*]}
+\newcommand{\educationSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\projectSubHeadingListStart}{\renewcommand\labelitemi{\raisebox{1.50ex}{$\bullet$}} \begin{itemize}[leftmargin=*]}
+\newcommand{\projectSubHeadingListEnd}{\end{itemize}}
+\newcommand{\projectSubheading}[3]{
+  	\vspace{-1pt}\item{
+		\begin{tabular}{p{0.4\linewidth}p{0.4\linewidth}p{0.2\linewidth}}
+			
+      		  \textbf{#1} & \textit{#2} & \raggedleft\textit{\small#3}\\
+			
+    		\end{tabular}}
+	\vspace{-5pt}
+}
+
+\newcommand{\skillsSubHeadingListStart}{\renewcommand\labelitemi{\raisebox{0.00ex}{$\bullet$}} \begin{itemize}[leftmargin=*]}
+\newcommand{\skillsSubHeadingListEnd}{\end{itemize}}
+
+\newcommand\mypound{\scalebox{0.8}{\raisebox{0.4ex}{\#}}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\centering
+	{\fontsize{20}{30}\selectfont\bfseries Sayali Patkar\par}
+	\textcolor{NavyBlue}{\faMapMarker}\space \textit{XXXXXXXX XX, Kiel, Germany, 24149}
+	\vspace{-2mm}
+	\begin{table*}[ht]
+		\begin{tabular}{p{0.25\linewidth}p{0.25\linewidth}p{0.25\linewidth}p{0.4\linewidth}}
+			\textcolor{NavyBlue}{\faMobile}\space \textit{X-XXXXXXXX} & \textcolor{NavyBlue}		{\faLinkedin}\space\space \href{https://www.linkedin.com/in/sayali-patkar-515aba152/}{\textit{LinkedIn : Sayali}} & \textcolor{NavyBlue}{\faGithub}\space\space \href{https://github.com/SayaliPatkar}{\textit{Github : SayaliPatkar}} & 	\textcolor{NavyBlue}{\faEnvelope}\space \textit{xx.xxxx@gmail.com}\\
+		\end{tabular}
+	\end{table*}
+\vspace{-7mm}
+%-----------EDUCATION-----------------
+\section{Education}
+  \educationSubHeadingListStart
+	\educationSubheading
+      {Fachhochschule Kiel}{Kiel, Deutschland}
+      {Masters Information Engineering (Intelligent Systems);  Grade: 1.70}{Sept. 2016 -- Present}
+    \educationSubheading
+      {Watumull Institute affiliated with Mumbai University}{Mumbai, India}
+      {Bachelor of Engineering in Electronics and Telecommunication;  Grade: 2.30}{Jul. 2009 -- May. 2013}
+  \educationSubHeadingListEnd
+
+
+%-----------ACADEMIC PROJECTS-----------------
+\section{Academic Projects}
+ 	\projectSubHeadingListStart
+	
+	\projectSubheading
+      {Master Project}{Fachhochschule Kiel}{Apr. 2018 -- Present}
+	\vspace{-20pt}
+	\resumeItemListStart
+      	\resumeItem{Convolutional Neural Networks}
+          	{worked on Phillips Research's \enquote{Biomedical Joint Detection Project} written with Python and TensorFlow using UNET CNN}
+       	\resumeItem{Literature Suvey}
+          {studied various traditional as well as state-of-the-art loss functions and their application and incorporated them in existing code}
+		\resumeItem{Implementation and Analysis}
+          {developed logic for calculation and visualization performance measuring metrics and compared different results}
+	\resumeItemListEnd
+
+	\projectSubheading
+	{Pattern Recognition} 	{CAU, Kiel}	{Sept. 2017 -- Feb. 2018}
+	\vspace{-20pt}
+	\resumeItemListStart
+        \resumeItem{Probability Calculus}
+          {studied theoretical aspects like Maximum-Likelihood Estimation, K-nearest neighbors etc. that form basis of many ML algorithms and programmed applications demonstrating their practical usage}
+        \resumeItem{Image Processing}
+          {studied and gained hands on experience on image processing using MATLAB}
+      \resumeItemListEnd
+
+	\projectSubheading
+	{Sentiment Analyzer}{Fachhochschule Kiel}{Mar. 2017 -- Jul. 2017}
+	\vspace{-20pt}
+	\resumeItemListStart
+        \resumeItem{Natural Language Processing}
+          {studied basics of NLP and sentiment analysis}
+        \resumeItem{Full Stack Development}
+          {developed fully functional C\mypound\space application performing sentiment analysis using Bing API and AFINN library}
+      \resumeItemListEnd
+
+	\projectSubheading
+	{BuzzBeeper - TV Series Tracker}{Fachhochschule Kiel}{Sept. 2016 -- Feb. 2017}
+	\vspace{-20pt}
+	\resumeItemListStart
+        \resumeItem{Leadership}
+          {lead a team of 5 to develop full-stack web application using node.js, angular.js and web-sockets}
+      \resumeItemListEnd
+
+	\projectSubheading
+	{Bachelors Project}{Mumbai University}{Jan. 2013 -- May. 2013}
+	\vspace{-20pt}
+	\resumeItemListStart
+        \resumeItem{Wireless Sensor Network with Siemens}
+          {as a trainee at Siemens designed and developed a sensor network that communicates with centralized micro controller using ZigBee wireless protocol}
+      \resumeItemListEnd
+
+ 	\projectSubHeadingListEnd
+
+
+%-----------INDUSTRIAL EXPERIENCE-----------------
+\section{Industrial Expericence}
+ 	\projectSubHeadingListStart
+	\projectSubheading
+      {Ergovia GmbH, Kiel}{Part-time Software Developer }{Apr. 2017 - Jan. 2018}
+\vspace{-20pt}
+      \resumeItemListStart
+        \resumeItem{Connection Pool Migration}
+          {conducted research on connection pool options which can support massive data transfer and migrated from C3PO to Hikari CP}
+        \resumeItem{Java 8 and Spring}
+          {migrated outdated application to Spring-boot and Java-8 application that uses REST-API}
+      \resumeItemListEnd
+
+    	\projectSubheading
+      {Capgemini India Pvt. Ltd.}{Associate Consultant }{Dec. 2013 - Aug. 2016}
+\vspace{-20pt}
+      \resumeItemListStart
+        \resumeItem{Quick Learning}
+          {worked on various projects that required quick grasp on everchanging technical requirements like spring-integration, spring-security, mocking and unit testing, server configurations and scripting}
+        \resumeItem{Agile Development}
+          {worked on HSBC's banking and insurance projects that followed Agile Development Model}
+ 	\resumeItem{Work Experience in Multi-city Team}
+          {worked in multi-city teams on tight development and testing schedules}
+	\resumeItem{Client Handling and Communication}
+          {communicated with client on regular basis to understand entity specific requirements, defect resolutions and code deployments}
+      \resumeItemListEnd
+
+  \projectSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+  	\skillsSubHeadingListStart
+		\item{\textbf{Languages}{: Python, Java, MATLAB, Javascript, C\mypound, SQL}}
+		\item{\textbf{Libraries / Technologies}{: scikit-learn, TensorFlow, OpenCV, AWS, IBM Websphere}}
+		\item{\textbf{Relevant Coursework}{: Neural Networks, Cognitive Consulting, Requirement Engineering, Pattern Recognition, Advanced Application Systems Development }}
+		\item{\textbf{Publication}{:  \href{https://www.yumpu.com/en/document/view/43408325/wireless-sensor-network-using-zigbee-irnet-explore}{Wireless Sensor Networks using ZigBee : IRNET International Conference, March 2013 }}}
+
+ \skillsSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
